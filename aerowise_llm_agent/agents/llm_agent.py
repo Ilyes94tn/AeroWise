@@ -1,6 +1,6 @@
 """
 Agent LLM Intelligent - AeroWise
-Utilise Agno + OpenAI pour comprendre le langage naturel
+Utilise Claude (Anthropic) pour comprendre le langage naturel
 et répondre intelligemment aux questions sur la biodiversité aéroportuaire
 """
 import json
@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 from typing import List, Dict, Optional
 from dotenv import load_dotenv
-from openai import OpenAI
+from anthropic import Anthropic
 
 # Charger les variables d'environnement
 load_dotenv()
@@ -16,7 +16,7 @@ load_dotenv()
 
 class AeroWiseLLMAgent:
     """
-    Agent intelligent basé sur LLM pour la gestion de biodiversité aéroportuaire
+    Agent intelligent basé sur Claude (Anthropic) pour la gestion de biodiversité aéroportuaire
     
     Caractéristiques:
     - Comprend le langage naturel (pas de règles if/else)
@@ -27,29 +27,29 @@ class AeroWiseLLMAgent:
     
     def __init__(self):
         """Initialise l'agent LLM et charge les données"""
-        # Configuration OpenAI
-        self.api_key = os.getenv("OPENAI_API_KEY")
+        # Configuration Anthropic Claude
+        self.api_key = os.getenv("ANTHROPIC_API_KEY")
         if not self.api_key:
-            raise ValueError("❌ OPENAI_API_KEY manquante dans .env")
+            raise ValueError("❌ ANTHROPIC_API_KEY manquante dans .env")
         
-        self.model = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-        self.temperature = float(os.getenv("OPENAI_TEMPERATURE", "0.3"))
-        self.max_tokens = int(os.getenv("OPENAI_MAX_TOKENS", "1000"))
+        self.model = os.getenv("ANTHROPIC_MODEL", "claude-3-5-haiku-20241022")
+        self.temperature = float(os.getenv("ANTHROPIC_TEMPERATURE", "0.3"))
+        self.max_tokens = int(os.getenv("ANTHROPIC_MAX_TOKENS", "1000"))
         
-        # Client OpenAI
-        self.client = OpenAI(api_key=self.api_key)
+        # Client Anthropic
+        self.client = Anthropic(api_key=self.api_key)
         
         # Charger les données
         self.data_dir = Path(__file__).parent.parent / "data"
         self.wikipedia_data = self._load_json("enriched_wikipedia.json")
         self.gbif_data = self._load_json("enriched_gbif_media.json")
         
-        print(f"✅ Agent LLM initialisé")
+        print(f"✅ Agent LLM initialisé (Claude Anthropic)")
         print(f"   - Modèle: {self.model}")
         print(f"   - Données: {len(self.wikipedia_data)} espèces")
         
-        # Créer l'agent Agno
-        self._create_agent()
+        # Créer le system prompt
+        self._create_system_prompt()
     
     def _load_json(self, filename: str) -> List[Dict]:
         """Charge un fichier JSON"""
@@ -57,16 +57,16 @@ class AeroWiseLLMAgent:
         with open(filepath, 'r', encoding='utf-8') as f:
             return json.load(f)
     
-    def _create_agent(self):
-        """Crée l'agent Agno avec le système prompt"""
+    def _create_system_prompt(self):
+        """Crée le system prompt pour Claude"""
         
-        # Créer un résumé des données disponibles pour le system prompt
+        # Créer un résumé des données disponibles
         species_list = [
             f"- {sp['scientific_name']} ({self._get_french_name(sp['species_key'])})"
             for sp in self.wikipedia_data
         ]
         
-        system_prompt = f"""Tu es AeroWise, un assistant IA spécialisé dans la gestion de la biodiversité aéroportuaire.
+        self.system_prompt = f"""Tu es AeroWise, un assistant IA spécialisé dans la gestion de la biodiversité aéroportuaire.
 
 CONTEXTE ET DONNÉES DISPONIBLES:
 Tu as accès à une base de données contenant {len(self.wikipedia_data)} espèces:
@@ -140,10 +140,6 @@ Il niche au sol et se nourrit d'invertébrés. Présent en France, Allemagne et 
 RÈGLE D'OR:
 Si une question concerne la biodiversité, l'écologie, les oiseaux, les plantes, les risques aviaires, ou la gestion environnementale aéroportuaire → RÉPONDS
 Sinon → REDIRIGE poliment vers ton domaine"""
-
-        # Note: Agno sera utilisé plus tard pour l'orchestration multi-agents
-        # Pour l'instant, on utilise directement l'API OpenAI
-        self.system_prompt = system_prompt
     
     def _get_french_name(self, species_key: int) -> str:
         """Récupère le nom français d'une espèce"""
@@ -154,38 +150,9 @@ Sinon → REDIRIGE poliment vers ton domaine"""
                 return french_names[0]
         return "Nom français indisponible"
     
-    def _search_species_by_name(self, query: str) -> Optional[Dict]:
-        """Recherche une espèce par nom (scientifique ou vernaculaire)"""
-        query_lower = query.lower()
-        
-        # Chercher dans Wikipedia
-        for wiki_sp in self.wikipedia_data:
-            if query_lower in wiki_sp['scientific_name'].lower():
-                # Enrichir avec les données GBIF
-                gbif_sp = next((sp for sp in self.gbif_data if sp['species_key'] == wiki_sp['species_key']), None)
-                return {**wiki_sp, 'gbif_data': gbif_sp}
-        
-        # Chercher dans les noms vernaculaires
-        for gbif_sp in self.gbif_data:
-            for name in gbif_sp['vernacular_names']:
-                if query_lower in name['name'].lower():
-                    wiki_sp = next((sp for sp in self.wikipedia_data if sp['species_key'] == gbif_sp['species_key']), None)
-                    return {**wiki_sp, 'gbif_data': gbif_sp} if wiki_sp else gbif_sp
-        
-        return None
-    
-    def _get_species_with_risk(self, risk_level: str) -> List[Dict]:
-        """Récupère les espèces avec un niveau de risque spécifique"""
-        return [sp for sp in self.gbif_data if sp.get('risk_level') == risk_level]
-    
-    def _get_threatened_species(self) -> List[Dict]:
-        """Récupère les espèces menacées (VU, EN, CR, NT)"""
-        threatened_statuses = ['VU', 'EN', 'CR', 'NT']
-        return [sp for sp in self.gbif_data if sp.get('conservation_status') in threatened_statuses]
-    
     def _build_context_for_llm(self, user_question: str) -> str:
         """
-        Construit le contexte pertinent pour le LLM
+        Construit le contexte pertinent pour Claude
         basé sur la question de l'utilisateur
         """
         context_parts = []
@@ -210,8 +177,8 @@ Risque aviation: {gbif_sp.get('risk_level') if gbif_sp else 'N/A'}
         
         # Si "risque" ou "dangereux" dans la question
         if any(word in question_lower for word in ['risque', 'danger', 'collision', 'élevé']):
-            high_risk = self._get_species_with_risk('élevé')
-            if high_risk and not context_parts:  # Ajouter seulement si pas déjà d'infos
+            high_risk = [sp for sp in self.gbif_data if sp.get('risk_level') == 'élevé']
+            if high_risk and not context_parts:
                 context_parts.append("ESPÈCES À RISQUE ÉLEVÉ:")
                 for sp in high_risk[:3]:
                     french_name = self._get_french_name(sp['species_key'])
@@ -219,7 +186,8 @@ Risque aviation: {gbif_sp.get('risk_level') if gbif_sp else 'N/A'}
         
         # Si "menacé" ou "protégé" dans la question
         if any(word in question_lower for word in ['menac', 'protég', 'conservation', 'vulnérable']):
-            threatened = self._get_threatened_species()
+            threatened_statuses = ['VU', 'EN', 'CR', 'NT']
+            threatened = [sp for sp in self.gbif_data if sp.get('conservation_status') in threatened_statuses]
             if threatened and not context_parts:
                 context_parts.append("ESPÈCES MENACÉES:")
                 for sp in threatened[:3]:
@@ -236,7 +204,7 @@ Risque aviation: {gbif_sp.get('risk_level') if gbif_sp else 'N/A'}
     
     def ask(self, question: str) -> str:
         """
-        Pose une question à l'agent LLM
+        Pose une question à l'agent Claude
         
         Args:
             question: Question en langage naturel
@@ -247,31 +215,31 @@ Risque aviation: {gbif_sp.get('risk_level') if gbif_sp else 'N/A'}
         # Construire le contexte pertinent
         context = self._build_context_for_llm(question)
         
-        # Construire les messages pour l'API OpenAI
-        messages = [
-            {"role": "system", "content": self.system_prompt},
-            {"role": "user", "content": f"""CONTEXTE DES DONNÉES DISPONIBLES:
+        # Construire le message utilisateur avec contexte
+        user_message = f"""CONTEXTE DES DONNÉES DISPONIBLES:
 {context}
 
 QUESTION DE L'UTILISATEUR:
 {question}
 
-Réponds à cette question en utilisant le contexte fourni et en suivant tes directives."""}
-        ]
+Réponds à cette question en utilisant le contexte fourni et en suivant tes directives."""
         
         try:
-            # Appeler l'API OpenAI
-            response = self.client.chat.completions.create(
+            # Appeler l'API Claude (Anthropic)
+            response = self.client.messages.create(
                 model=self.model,
-                messages=messages,
+                max_tokens=self.max_tokens,
                 temperature=self.temperature,
-                max_tokens=self.max_tokens
+                system=self.system_prompt,
+                messages=[
+                    {"role": "user", "content": user_message}
+                ]
             )
             
-            return response.choices[0].message.content
+            return response.content[0].text
             
         except Exception as e:
-            return f"❌ Erreur lors de la communication avec l'API: {str(e)}\n\nVérifiez que votre clé API est correcte dans le fichier .env"
+            return f"❌ Erreur lors de la communication avec l'API Claude: {str(e)}\n\nVérifiez que votre clé API Anthropic est correcte dans le fichier .env"
 
 
 if __name__ == "__main__":
@@ -287,7 +255,7 @@ if __name__ == "__main__":
     ]
     
     print("\n" + "="*70)
-    print("🧪 TEST DE L'AGENT LLM")
+    print("🧪 TEST DE L'AGENT LLM (Claude)")
     print("="*70 + "\n")
     
     for q in test_questions:
