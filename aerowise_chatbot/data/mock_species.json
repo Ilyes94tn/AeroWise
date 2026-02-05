@@ -1,0 +1,152 @@
+[
+  {
+    "id": "esp_001",
+    "nom_scientifique": "Vanellus vanellus",
+    "nom_commun": "Vanneau huppé",
+    "classe": "Aves",
+    "description": "Oiseau de taille moyenne (28-31 cm) avec une huppe caractéristique noire et fine. Plumage noir et blanc contrasté avec reflets verts sur le dos. Fréquente les prairies humides et les zones cultivées.",
+    "risque_collision": "moyen",
+    "statut_conservation": "NT",
+    "habitat_prefere": "prairies_humides"
+  },
+  {
+    "id": "esp_002",
+    "nom_scientifique": "Corvus corone",
+    "nom_commun": "Corneille noire",
+    "classe": "Aves",
+    "description": "Grand corvidé entièrement noir (45-50 cm). Bec fort et épais. Opportuniste, s'adapte à tous les milieux. Très intelligent, peut représenter un danger pour les aéronefs en groupe.",
+    "risque_collision": "élevé",
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_mixtes"
+  },
+  {
+    "id": "esp_003",
+    "nom_scientifique": "Buteo buteo",
+    "nom_commun": "Buse variable",
+    "classe": "Aves",
+    "description": "Rapace de taille moyenne (51-57 cm) avec plumage très variable du brun clair au brun foncé. Chasse à l'affût depuis des perchoirs. Vol plané caractéristique.",
+    "risque_collision": "élevé",
+    "statut_conservation": "LC",
+    "habitat_prefere": "boisements_prairies"
+  },
+  {
+    "id": "esp_004",
+    "nom_scientifique": "Alauda arvensis",
+    "nom_commun": "Alouette des champs",
+    "classe": "Aves",
+    "description": "Petit passereau (16-18 cm) brun strié, avec une petite huppe érectile. Chant en vol caractéristique. Espèce des milieux ouverts, en déclin en Europe.",
+    "risque_collision": "faible",
+    "statut_conservation": "LC",
+    "habitat_prefere": "prairies_cultures"
+  },
+  {
+    "id": "esp_005",
+    "nom_scientifique": "Columba palumbus",
+    "nom_commun": "Pigeon ramier",
+    "classe": "Aves",
+    "description": "Plus grand pigeon européen (40-42 cm). Plumage gris-bleu avec taches blanches au cou et sur les ailes. Vole en groupe, risque modéré de collision.",
+    "risque_collision": "moyen",
+    "statut_conservation": "LC",
+    "habitat_prefere": "boisements"
+  },
+  {
+    "id": "esp_006",
+    "nom_scientifique": "Sturnus vulgaris",
+    "nom_commun": "Étourneau sansonnet",
+    "classe": "Aves",
+    "description": "Passereau de taille moyenne (20-23 cm), plumage noir irisé. Forme des nuées spectaculaires au crépuscule. Risque élevé en raison des groupes denses.",
+    "risque_collision": "élevé",
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_urbaines_prairies"
+  },
+  {
+    "id": "esp_007",
+    "nom_scientifique": "Larus ridibundus",
+    "nom_commun": "Mouette rieuse",
+    "classe": "Aves",
+    "description": "Petite mouette (35-39 cm) avec capuchon brun foncé en période nuptiale. Fréquente les zones humides et suit souvent les tracteurs. Grégaire.",
+    "risque_collision": "moyen",
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_humides"
+  },
+  {
+    "id": "esp_008",
+    "nom_scientifique": "Circus aeruginosus",
+    "nom_commun": "Busard des roseaux",
+    "classe": "Aves",
+    "description": "Rapace de taille moyenne (48-56 cm), dimorphisme sexuel marqué. Chasse en vol bas au-dessus des roselières. Espèce protégée.",
+    "risque_collision": "moyen",
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_humides_roselieres"
+  },
+  {
+    "id": "esp_009",
+    "nom_scientifique": "Phalacrocorax carbo",
+    "nom_commun": "Grand Cormoran",
+    "classe": "Aves",
+    "description": "Grand oiseau aquatique (80-100 cm), plumage noir avec reflets métalliques. Pêcheur plongeant. Risque élevé en raison de sa taille et de son vol bas.",
+    "risque_collision": "élevé",
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_humides_etangs"
+  },
+  {
+    "id": "esp_010",
+    "nom_scientifique": "Typha latifolia",
+    "nom_commun": "Massette à larges feuilles",
+    "classe": "Plantae",
+    "description": "Plante aquatique vivace (1-2 m) avec inflorescence brune caractéristique en épi cylindrique. Colonise les berges et les zones humides. Peut obstruer les canaux de drainage.",
+    "risque_collision": null,
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_humides_berges"
+  },
+  {
+    "id": "esp_011",
+    "nom_scientifique": "Ophrys apifera",
+    "nom_commun": "Ophrys abeille",
+    "classe": "Plantae",
+    "description": "Orchidée terrestre (20-50 cm) avec fleur imitant une abeille. Espèce protégée en France. Indicateur de prairies calcaires riches. Menacée par la fauche intensive.",
+    "risque_collision": null,
+    "statut_conservation": "VU",
+    "habitat_prefere": "prairies_calcaires"
+  },
+  {
+    "id": "esp_012",
+    "nom_scientifique": "Centaurea cyanus",
+    "nom_commun": "Bleuet des champs",
+    "classe": "Plantae",
+    "description": "Plante annuelle (30-80 cm) avec fleurs bleu intense. Messicole en forte régression due aux herbicides. Emblématique des champs de céréales traditionnels.",
+    "risque_collision": null,
+    "statut_conservation": "VU",
+    "habitat_prefere": "cultures_cereales"
+  },
+  {
+    "id": "esp_013",
+    "nom_scientifique": "Potentilla reptans",
+    "nom_commun": "Potentille rampante",
+    "classe": "Plantae",
+    "description": "Plante rampante (10-30 cm) avec fleurs jaunes à 5 pétales. Colonise les sols compactés des abords de pistes. Très résistante au piétinement.",
+    "risque_collision": null,
+    "statut_conservation": "LC",
+    "habitat_prefere": "bords_chemins_pistes"
+  },
+  {
+    "id": "esp_014",
+    "nom_scientifique": "Dactylorhiza majalis",
+    "nom_commun": "Orchis de mai",
+    "classe": "Plantae",
+    "description": "Orchidée robuste (20-60 cm) avec fleurs pourpres tachetées. Indicateur de prairies humides bien conservées. Protégée dans plusieurs régions. Menacée par le drainage.",
+    "risque_collision": null,
+    "statut_conservation": "NT",
+    "habitat_prefere": "prairies_humides"
+  },
+  {
+    "id": "esp_015",
+    "nom_scientifique": "Phragmites australis",
+    "nom_commun": "Roseau commun",
+    "classe": "Plantae",
+    "description": "Grande graminée vivace (2-4 m) formant des roselières denses. Habitat important pour l'avifaune mais peut masquer la visibilité et attirer la faune. Nécessite une gestion.",
+    "risque_collision": null,
+    "statut_conservation": "LC",
+    "habitat_prefere": "zones_humides_roselieres"
+  }
+]

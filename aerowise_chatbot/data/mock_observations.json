@@ -1,0 +1,222 @@
+[
+  {
+    "id": "obs_001",
+    "espece_id": "esp_001",
+    "date": "2025-02-01T08:30:00",
+    "position": {"lat": 48.7265, "lon": 2.3680},
+    "zone_id": "zone_003",
+    "nombre_individus": 12,
+    "observateur": "Agent terrain A. Dubois",
+    "notes": "Groupe en alimentation dans la prairie humide",
+    "photo_url": null
+  },
+  {
+    "id": "obs_002",
+    "espece_id": "esp_002",
+    "date": "2025-02-02T14:15:00",
+    "position": {"lat": 48.7238, "lon": 2.3720},
+    "zone_id": "zone_006",
+    "nombre_individus": 5,
+    "observateur": "Superviseur M. Martin",
+    "notes": "Groupe posé sur le toit du terminal",
+    "photo_url": null
+  },
+  {
+    "id": "obs_003",
+    "espece_id": "esp_003",
+    "date": "2025-02-03T10:00:00",
+    "position": {"lat": 48.7145, "lon": 2.3855},
+    "zone_id": "zone_005",
+    "nombre_individus": 1,
+    "observateur": "Agent terrain L. Petit",
+    "notes": "Individu perché en lisière, chasse à l'affût",
+    "photo_url": null
+  },
+  {
+    "id": "obs_004",
+    "espece_id": "esp_006",
+    "date": "2025-02-04T17:45:00",
+    "position": {"lat": 48.7210, "lon": 2.3700},
+    "zone_id": "zone_007",
+    "nombre_individus": 250,
+    "observateur": "Agent terrain A. Dubois",
+    "notes": "Nuée importante en formation pré-dortoir - ALERTE",
+    "photo_url": null
+  },
+  {
+    "id": "obs_005",
+    "espece_id": "esp_007",
+    "date": "2025-02-01T11:20:00",
+    "position": {"lat": 48.7195, "lon": 2.4025},
+    "zone_id": "zone_004",
+    "nombre_individus": 35,
+    "observateur": "Technicien environnement S. Blanc",
+    "notes": "Groupe en alimentation sur la zone humide",
+    "photo_url": null
+  },
+  {
+    "id": "obs_006",
+    "espece_id": "esp_001",
+    "date": "2025-01-28T09:15:00",
+    "position": {"lat": 48.7217, "lon": 2.3590},
+    "zone_id": "zone_007",
+    "nombre_individus": 8,
+    "observateur": "Agent terrain L. Petit",
+    "notes": "Groupe en parade nuptiale",
+    "photo_url": null
+  },
+  {
+    "id": "obs_007",
+    "espece_id": "esp_009",
+    "date": "2025-02-02T07:30:00",
+    "position": {"lat": 48.7188, "lon": 2.4030},
+    "zone_id": "zone_004",
+    "nombre_individus": 3,
+    "observateur": "Technicien environnement S. Blanc",
+    "notes": "En pêche, vol bas au-dessus de la zone humide",
+    "photo_url": null
+  },
+  {
+    "id": "obs_008",
+    "espece_id": "esp_005",
+    "date": "2025-02-03T16:00:00",
+    "position": {"lat": 48.7152, "lon": 2.3870},
+    "zone_id": "zone_005",
+    "nombre_individus": 20,
+    "observateur": "Agent terrain A. Dubois",
+    "notes": "Groupe en vol vers le dortoir en boisement",
+    "photo_url": null
+  },
+  {
+    "id": "obs_009",
+    "espece_id": "esp_004",
+    "date": "2025-01-30T12:45:00",
+    "position": {"lat": 48.7272, "lon": 2.3710},
+    "zone_id": "zone_003",
+    "nombre_individus": 15,
+    "observateur": "Superviseur M. Martin",
+    "notes": "Chant territorial entendu",
+    "photo_url": null
+  },
+  {
+    "id": "obs_010",
+    "espece_id": "esp_008",
+    "date": "2025-02-01T15:30:00",
+    "position": {"lat": 48.7182, "lon": 2.3610},
+    "zone_id": "zone_008",
+    "nombre_individus": 1,
+    "observateur": "Technicien environnement S. Blanc",
+    "notes": "Femelle en chasse au-dessus des roselières",
+    "photo_url": null
+  },
+  {
+    "id": "obs_011",
+    "espece_id": "esp_011",
+    "date": "2025-01-25T10:00:00",
+    "position": {"lat": 48.7268, "lon": 2.3695},
+    "zone_id": "zone_003",
+    "nombre_individus": 5,
+    "observateur": "Botaniste C. Leroy",
+    "notes": "Pieds en floraison - espèce protégée ALERTE",
+    "photo_url": null
+  },
+  {
+    "id": "obs_012",
+    "espece_id": "esp_012",
+    "date": "2025-01-26T11:30:00",
+    "position": {"lat": 48.7225, "lon": 2.3575},
+    "zone_id": "zone_007",
+    "nombre_individus": 50,
+    "observateur": "Botaniste C. Leroy",
+    "notes": "Population importante - zone à préserver de la fauche",
+    "photo_url": null
+  },
+  {
+    "id": "obs_013",
+    "espece_id": "esp_014",
+    "date": "2025-01-28T14:00:00",
+    "position": {"lat": 48.7185, "lon": 2.3605},
+    "zone_id": "zone_008",
+    "nombre_individus": 12,
+    "observateur": "Botaniste C. Leroy",
+    "notes": "Orchidées en début de floraison",
+    "photo_url": null
+  },
+  {
+    "id": "obs_014",
+    "espece_id": "esp_015",
+    "date": "2025-02-01T13:00:00",
+    "position": {"lat": 48.7190, "lon": 2.4040},
+    "zone_id": "zone_004",
+    "nombre_individus": 1,
+    "observateur": "Technicien environnement S. Blanc",
+    "notes": "Roselière en expansion - gestion nécessaire",
+    "photo_url": null
+  },
+  {
+    "id": "obs_015",
+    "espece_id": "esp_002",
+    "date": "2025-02-04T09:00:00",
+    "position": {"lat": 48.7245, "lon": 2.3800},
+    "zone_id": "zone_001",
+    "nombre_individus": 8,
+    "observateur": "Agent sécurité T. Rousseau",
+    "notes": "Groupe sur la piste - dispersion effectuée",
+    "photo_url": null
+  },
+  {
+    "id": "obs_016",
+    "espece_id": "esp_006",
+    "date": "2025-02-03T18:00:00",
+    "position": {"lat": 48.7215, "lon": 2.3595},
+    "zone_id": "zone_007",
+    "nombre_individus": 180,
+    "observateur": "Agent terrain L. Petit",
+    "notes": "Nuée en formation - surveillance renforcée",
+    "photo_url": null
+  },
+  {
+    "id": "obs_017",
+    "espece_id": "esp_003",
+    "date": "2025-02-02T11:45:00",
+    "position": {"lat": 48.7275, "lon": 2.3730},
+    "zone_id": "zone_003",
+    "nombre_individus": 2,
+    "observateur": "Superviseur M. Martin",
+    "notes": "Couple en vol plané circulaire",
+    "photo_url": null
+  },
+  {
+    "id": "obs_018",
+    "espece_id": "esp_007",
+    "date": "2025-01-31T10:30:00",
+    "position": {"lat": 48.7205, "lon": 2.4020},
+    "zone_id": "zone_004",
+    "nombre_individus": 42,
+    "observateur": "Technicien environnement S. Blanc",
+    "notes": "Groupe en repos sur berge",
+    "photo_url": null
+  },
+  {
+    "id": "obs_019",
+    "espece_id": "esp_001",
+    "date": "2025-02-04T07:15:00",
+    "position": {"lat": 48.7270, "lon": 2.3665},
+    "zone_id": "zone_003",
+    "nombre_individus": 18,
+    "observateur": "Agent terrain A. Dubois",
+    "notes": "Groupe en alimentation matinale",
+    "photo_url": null
+  },
+  {
+    "id": "obs_020",
+    "espece_id": "esp_005",
+    "date": "2025-02-01T16:30:00",
+    "position": {"lat": 48.7148, "lon": 2.3885},
+    "zone_id": "zone_005",
+    "nombre_individus": 35,
+    "observateur": "Agent terrain L. Petit",
+    "notes": "Rassemblement en boisement pour la nuit",
+    "photo_url": null
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "inc_001",
+    "type": "bird_strike",
+    "date": "2025-01-15T14:23:00",
+    "position": {"lat": 48.7243, "lon": 2.3750},
+    "gravite": "moyenne",
+    "espece_impliquee": "esp_002",
+    "description": "Collision avec corneille noire lors de l'approche finale. Débris sur la piste.",
+    "mesures_prises": "Nettoyage piste, inspection moteur, rapport STAC envoyé"
+  },
+  {
+    "id": "inc_002",
+    "type": "bird_strike",
+    "date": "2025-01-22T08:45:00",
+    "position": {"lat": 48.7210, "lon": 2.3800},
+    "gravite": "faible",
+    "espece_impliquee": "esp_004",
+    "description": "Impact alouette des champs au décollage. Pas de dommage visible.",
+    "mesures_prises": "Inspection visuelle aéronef OK, rapport interne"
+  },
+  {
+    "id": "inc_003",
+    "type": "bird_strike",
+    "date": "2025-01-28T17:10:00",
+    "position": {"lat": 48.7248, "lon": 2.3920},
+    "gravite": "élevée",
+    "espece_impliquee": "esp_006",
+    "description": "Collision avec nuée d'étourneaux (environ 50 individus). Dommages multiples.",
+    "mesures_prises": "Vol détourné, inspection complète moteurs, effarouchement zone, enquête BEA"
+  },
+  {
+    "id": "inc_004",
+    "type": "intrusion_faune",
+    "date": "2025-02-01T06:30:00",
+    "position": {"lat": 48.7212, "lon": 2.3700},
+    "gravite": "moyenne",
+    "espece_impliquee": null,
+    "description": "Renard observé traversant la piste 2. Vol retardé 15 minutes.",
+    "mesures_prises": "Capture et relocalisation, renforcement clôture secteur Nord"
+  },
+  {
+    "id": "inc_005",
+    "type": "bird_strike",
+    "date": "2025-02-02T12:15:00",
+    "position": {"lat": 48.7238, "lon": 2.3680},
+    "gravite": "faible",
+    "espece_impliquee": "esp_005",
+    "description": "Impact pigeon ramier au roulage. Oiseau récupéré mort.",
+    "mesures_prises": "Nettoyage, identification espèce, ajout base de données"
+  },
+  {
+    "id": "inc_006",
+    "type": "bird_strike",
+    "date": "2025-02-03T15:40:00",
+    "position": {"lat": 48.7207, "lon": 2.3850},
+    "gravite": "moyenne",
+    "espece_impliquee": "esp_003",
+    "description": "Buse variable heurtée en montée initiale. Trace de sang sur pare-brise.",
+    "mesures_prises": "Nettoyage, inspection, signalement ornithologues pour suivi population"
+  },
+  {
+    "id": "inc_007",
+    "type": "bird_strike",
+    "date": "2025-01-18T09:05:00",
+    "position": {"lat": 48.7225, "lon": 2.3755},
+    "gravite": "faible",
+    "espece_impliquee": "esp_001",
+    "description": "Vanneau huppé heurté au décollage. Impact aile gauche sans conséquence.",
+    "mesures_prises": "Rapport standard, oiseau retrouvé mort en bord de piste"
+  },
+  {
+    "id": "inc_008",
+    "type": "intrusion_faune",
+    "date": "2025-01-30T19:45:00",
+    "position": {"lat": 48.7240, "lon": 2.3820},
+    "gravite": "faible",
+    "espece_impliquee": null,
+    "description": "Lièvre détecté sur taxiway. Dispersion réussie sans retard.",
+    "mesures_prises": "Surveillance renforcée prairie Nord, évaluation clôture"
+  },
+  {
+    "id": "inc_009",
+    "type": "bird_strike",
+    "date": "2025-02-04T11:20:00",
+    "position": {"lat": 48.7215, "lon": 2.3910},
+    "gravite": "moyenne",
+    "espece_impliquee": "esp_007",
+    "description": "Mouette rieuse ingérée dans réacteur droit. Atterrissage d'urgence.",
+    "mesures_prises": "Vol annulé, inspection moteur complète, effarouchement zone humide"
+  },
+  {
+    "id": "inc_010",
+    "type": "bird_strike",
+    "date": "2025-01-12T16:50:00",
+    "position": {"lat": 48.7252, "lon": 2.3890},
+    "gravite": "faible",
+    "espece_impliquee": "esp_002",
+    "description": "Corneille heurtée lors de l'atterrissage. Pas de dommage structurel.",
+    "mesures_prises": "Inspection visuelle, nettoyage train d'atterrissage"
+  }
+]

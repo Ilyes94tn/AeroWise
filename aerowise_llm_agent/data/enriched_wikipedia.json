@@ -1,0 +1,62 @@
+[
+  {
+    "species_key": 2435099,
+    "scientific_name": "Vanellus vanellus",
+    "wikipedia_page_id": 33901,
+    "wikipedia_title": "Northern Lapwing",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Northern_Lapwing",
+    "extract_text": "Le Vanneau huppé (Vanellus vanellus) est une espèce d'oiseau limicole de la famille des Charadriidae. C'est un oiseau migrateur présent dans les prairies humides. Son plumage est noir et blanc avec des reflets verts métalliques sur le dos. Il possède une huppe noire caractéristique. En vol, il émet un cri plaintif 'pee-wit'. Il niche au sol dans les prairies et se nourrit d'invertébrés.",
+    "categories": ["Birds", "Charadriiformes", "Birds of Europe"],
+    "fetched_at": "2025-02-01T10:30:00"
+  },
+  {
+    "species_key": 2435100,
+    "scientific_name": "Corvus corone",
+    "wikipedia_page_id": 33902,
+    "wikipedia_title": "Carrion Crow",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Carrion_Crow",
+    "extract_text": "La Corneille noire (Corvus corone) est un grand passereau entièrement noir de 45-50 cm. Très intelligente et opportuniste, elle s'adapte à tous les milieux. Son bec est fort et légèrement courbé. Elle forme des groupes familiaux et peut représenter un danger pour l'aviation en raison de sa taille et de ses regroupements. Elle est omnivore et se nourrit de charognes, graines, insectes et petits vertébrés.",
+    "categories": ["Corvidae", "Birds of Europe", "Intelligent animals"],
+    "fetched_at": "2025-02-01T10:35:00"
+  },
+  {
+    "species_key": 2435101,
+    "scientific_name": "Buteo buteo",
+    "wikipedia_page_id": 33903,
+    "wikipedia_title": "Common Buzzard",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Common_Buzzard",
+    "extract_text": "La Buse variable (Buteo buteo) est un rapace de taille moyenne (51-57 cm) très commun en Europe. Son plumage est extrêmement variable, allant du brun clair au brun foncé. Elle chasse principalement des petits mammifères depuis des perchoirs ou en vol plané. Ses ailes sont larges et sa queue courte et arrondie. Elle représente un risque de collision élevé pour l'aviation en raison de sa taille et de son vol plané à altitude moyenne.",
+    "categories": ["Birds of prey", "Accipitridae", "Birds of Europe"],
+    "fetched_at": "2025-02-01T10:40:00"
+  },
+  {
+    "species_key": 2435102,
+    "scientific_name": "Alauda arvensis",
+    "wikipedia_page_id": 33904,
+    "wikipedia_title": "Eurasian Skylark",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eurasian_Skylark",
+    "extract_text": "L'Alouette des champs (Alauda arvensis) est un petit passereau de 16-18 cm au plumage brun strié. Elle possède une petite huppe érectile. Son chant mélodieux en vol ascendant est caractéristique. Elle fréquente les milieux ouverts : prairies, cultures, zones agricoles. L'espèce est en déclin en Europe en raison de l'intensification agricole. Elle niche au sol et se nourrit de graines et d'insectes.",
+    "categories": ["Alaudidae", "Songbirds", "Birds of Europe", "Declining species"],
+    "fetched_at": "2025-02-01T10:45:00"
+  },
+  {
+    "species_key": 2435103,
+    "scientific_name": "Sturnus vulgaris",
+    "wikipedia_page_id": 33905,
+    "wikipedia_title": "Common Starling",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Common_Starling",
+    "extract_text": "L'Étourneau sansonnet (Sturnus vulgaris) est un passereau de 20-23 cm au plumage noir irisé de reflets verts et violets. En période internuptiale, il est ponctué de taches blanches. Très grégaire, il forme des nuées spectaculaires de milliers d'individus au crépuscule (murmurations). Ces rassemblements représentent un risque majeur pour l'aviation. Il s'adapte facilement aux environnements urbains et agricoles.",
+    "categories": ["Sturnidae", "Birds of Europe", "Invasive species", "Aviation hazard"],
+    "fetched_at": "2025-02-01T10:50:00"
+  },
+  {
+    "species_key": 2435104,
+    "scientific_name": "Ophrys apifera",
+    "wikipedia_page_id": 33906,
+    "wikipedia_title": "Bee Orchid",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ophrys_apifera",
+    "extract_text": "L'Ophrys abeille (Ophrys apifera) est une orchidée terrestre de 20-50 cm. Sa fleur imite remarquablement l'apparence d'une abeille femelle pour attirer les pollinisateurs mâles. Le labelle est brun velouté avec des marques jaunes. Cette espèce est protégée en France et indicatrice de prairies calcaires de qualité. Elle est menacée par l'urbanisation, l'agriculture intensive et la fauche précoce des prairies aéroportuaires.",
+    "categories": ["Orchidaceae", "Protected species", "Indicator species", "Threatened flora"],
+    "fetched_at": "2025-02-01T10:55:00"
+  }
+]

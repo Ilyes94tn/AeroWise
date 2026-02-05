@@ -1,0 +1,153 @@
+[
+  {
+    "species_key": 2435099,
+    "scientific_name": "Vanellus vanellus",
+    "vernacular_names": [
+      {"name": "Vanneau huppé", "language": "fr"},
+      {"name": "Northern Lapwing", "language": "en"},
+      {"name": "Kiebitz", "language": "de"}
+    ],
+    "descriptions": [
+      {"type": "general", "description": "Oiseau limicole de taille moyenne avec huppe caractéristique"},
+      {"type": "habitat", "description": "Prairies humides, zones agricoles"},
+      {"type": "behavior", "description": "Vol acrobatique avec battements d'ailes irréguliers"}
+    ],
+    "images": [
+      {"identifier": "https://example.com/vanellus1.jpg", "license": "CC-BY-4.0", "creator": "John Doe"},
+      {"identifier": "https://example.com/vanellus2.jpg", "license": "CC-BY-SA-3.0", "creator": "Jane Smith"}
+    ],
+    "distribution": [
+      {"locality": "France", "country": "FR"},
+      {"locality": "Germany", "country": "DE"},
+      {"locality": "United Kingdom", "country": "GB"}
+    ],
+    "conservation_status": "NT",
+    "risk_level": "moyen",
+    "fetched_at": "2025-02-01T10:30:00"
+  },
+  {
+    "species_key": 2435100,
+    "scientific_name": "Corvus corone",
+    "vernacular_names": [
+      {"name": "Corneille noire", "language": "fr"},
+      {"name": "Carrion Crow", "language": "en"},
+      {"name": "Rabenkrähe", "language": "de"}
+    ],
+    "descriptions": [
+      {"type": "general", "description": "Grand corvidé entièrement noir, très intelligent"},
+      {"type": "habitat", "description": "Tous milieux, adaptable"},
+      {"type": "behavior", "description": "Grégaire, forme des groupes familiaux"}
+    ],
+    "images": [
+      {"identifier": "https://example.com/corvus1.jpg", "license": "CC-BY-4.0", "creator": "Bob Wilson"}
+    ],
+    "distribution": [
+      {"locality": "France", "country": "FR"},
+      {"locality": "Spain", "country": "ES"},
+      {"locality": "Italy", "country": "IT"}
+    ],
+    "conservation_status": "LC",
+    "risk_level": "élevé",
+    "fetched_at": "2025-02-01T10:35:00"
+  },
+  {
+    "species_key": 2435101,
+    "scientific_name": "Buteo buteo",
+    "vernacular_names": [
+      {"name": "Buse variable", "language": "fr"},
+      {"name": "Common Buzzard", "language": "en"},
+      {"name": "Mäusebussard", "language": "de"}
+    ],
+    "descriptions": [
+      {"type": "general", "description": "Rapace diurne de taille moyenne au plumage très variable"},
+      {"type": "habitat", "description": "Boisements, lisières, prairies"},
+      {"type": "behavior", "description": "Chasse à l'affût ou en vol plané circulaire"}
+    ],
+    "images": [
+      {"identifier": "https://example.com/buteo1.jpg", "license": "CC-BY-4.0", "creator": "Mike Johnson"}
+    ],
+    "distribution": [
+      {"locality": "France", "country": "FR"},
+      {"locality": "Poland", "country": "PL"},
+      {"locality": "Russia", "country": "RU"}
+    ],
+    "conservation_status": "LC",
+    "risk_level": "élevé",
+    "fetched_at": "2025-02-01T10:40:00"
+  },
+  {
+    "species_key": 2435102,
+    "scientific_name": "Alauda arvensis",
+    "vernacular_names": [
+      {"name": "Alouette des champs", "language": "fr"},
+      {"name": "Eurasian Skylark", "language": "en"},
+      {"name": "Feldlerche", "language": "de"}
+    ],
+    "descriptions": [
+      {"type": "general", "description": "Petit passereau brun strié, chanteur remarquable"},
+      {"type": "habitat", "description": "Milieux ouverts, prairies, cultures"},
+      {"type": "behavior", "description": "Chant en vol ascendant caractéristique"}
+    ],
+    "images": [
+      {"identifier": "https://example.com/alauda1.jpg", "license": "CC-BY-4.0", "creator": "Sarah Lee"}
+    ],
+    "distribution": [
+      {"locality": "France", "country": "FR"},
+      {"locality": "Sweden", "country": "SE"},
+      {"locality": "Kazakhstan", "country": "KZ"}
+    ],
+    "conservation_status": "LC",
+    "risk_level": "faible",
+    "fetched_at": "2025-02-01T10:45:00"
+  },
+  {
+    "species_key": 2435103,
+    "scientific_name": "Sturnus vulgaris",
+    "vernacular_names": [
+      {"name": "Étourneau sansonnet", "language": "fr"},
+      {"name": "Common Starling", "language": "en"},
+      {"name": "Star", "language": "de"}
+    ],
+    "descriptions": [
+      {"type": "general", "description": "Passereau noir irisé, très grégaire"},
+      {"type": "habitat", "description": "Zones urbaines, agricoles, prairies"},
+      {"type": "behavior", "description": "Forme des nuées spectaculaires (murmurations)"}
+    ],
+    "images": [
+      {"identifier": "https://example.com/sturnus1.jpg", "license": "CC-BY-4.0", "creator": "Tom Brown"}
+    ],
+    "distribution": [
+      {"locality": "France", "country": "FR"},
+      {"locality": "United Kingdom", "country": "GB"},
+      {"locality": "North America", "country": "US"}
+    ],
+    "conservation_status": "LC",
+    "risk_level": "élevé",
+    "fetched_at": "2025-02-01T10:50:00"
+  },
+  {
+    "species_key": 2435104,
+    "scientific_name": "Ophrys apifera",
+    "vernacular_names": [
+      {"name": "Ophrys abeille", "language": "fr"},
+      {"name": "Bee Orchid", "language": "en"},
+      {"name": "Bienen-Ragwurz", "language": "de"}
+    ],
+    "descriptions": [
+      {"type": "general", "description": "Orchidée imitant une abeille femelle"},
+      {"type": "habitat", "description": "Prairies calcaires sèches"},
+      {"type": "conservation", "description": "Espèce protégée, menacée par l'agriculture intensive"}
+    ],
+    "images": [
+      {"identifier": "https://example.com/ophrys1.jpg", "license": "CC-BY-4.0", "creator": "Emma Green"}
+    ],
+    "distribution": [
+      {"locality": "France", "country": "FR"},
+      {"locality": "Spain", "country": "ES"},
+      {"locality": "Greece", "country": "GR"}
+    ],
+    "conservation_status": "VU",
+    "risk_level": null,
+    "fetched_at": "2025-02-01T10:55:00"
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "zone_001",
+    "nom": "Piste 1 (08L/26R)",
+    "type": "piste",
+    "coordinates": [
+      {"lat": 48.7251, "lon": 2.3651},
+      {"lat": 48.7252, "lon": 2.3950},
+      {"lat": 48.7241, "lon": 2.3951},
+      {"lat": 48.7240, "lon": 2.3652}
+    ]
+  },
+  {
+    "id": "zone_002",
+    "nom": "Piste 2 (08R/26L)",
+    "type": "piste",
+    "coordinates": [
+      {"lat": 48.7215, "lon": 2.3655},
+      {"lat": 48.7216, "lon": 2.3954},
+      {"lat": 48.7205, "lon": 2.3955},
+      {"lat": 48.7204, "lon": 2.3656}
+    ]
+  },
+  {
+    "id": "zone_003",
+    "nom": "Prairie Nord",
+    "type": "prairie",
+    "coordinates": [
+      {"lat": 48.7270, "lon": 2.3650},
+      {"lat": 48.7280, "lon": 2.3750},
+      {"lat": 48.7270, "lon": 2.3760},
+      {"lat": 48.7260, "lon": 2.3660}
+    ]
+  },
+  {
+    "id": "zone_004",
+    "nom": "Zone humide Est",
+    "type": "zone_humide",
+    "coordinates": [
+      {"lat": 48.7200, "lon": 2.4000},
+      {"lat": 48.7210, "lon": 2.4050},
+      {"lat": 48.7195, "lon": 2.4060},
+      {"lat": 48.7185, "lon": 2.4010}
+    ]
+  },
+  {
+    "id": "zone_005",
+    "nom": "Boisement Sud",
+    "type": "boisement",
+    "coordinates": [
+      {"lat": 48.7150, "lon": 2.3800},
+      {"lat": 48.7160, "lon": 2.3900},
+      {"lat": 48.7140, "lon": 2.3910},
+      {"lat": 48.7130, "lon": 2.3810}
+    ]
+  },
+  {
+    "id": "zone_006",
+    "nom": "Aérogare Terminal 1",
+    "type": "bati",
+    "coordinates": [
+      {"lat": 48.7235, "lon": 2.3700},
+      {"lat": 48.7240, "lon": 2.3730},
+      {"lat": 48.7230, "lon": 2.3735},
+      {"lat": 48.7225, "lon": 2.3705}
+    ]
+  },
+  {
+    "id": "zone_007",
+    "nom": "Prairie Ouest",
+    "type": "prairie",
+    "coordinates": [
+      {"lat": 48.7220, "lon": 2.3550},
+      {"lat": 48.7235, "lon": 2.3620},
+      {"lat": 48.7220, "lon": 2.3630},
+      {"lat": 48.7205, "lon": 2.3560}
+    ]
+  },
+  {
+    "id": "zone_008",
+    "nom": "Zone humide Ouest",
+    "type": "zone_humide",
+    "coordinates": [
+      {"lat": 48.7180, "lon": 2.3580},
+      {"lat": 48.7190, "lon": 2.3630},
+      {"lat": 48.7175, "lon": 2.3640},
+      {"lat": 48.7165, "lon": 2.3590}
+    ]
+  }
+]
